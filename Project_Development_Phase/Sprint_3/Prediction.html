@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Predicition page</title>
+        <style>
+      body{
+        background-image: url("b1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }      
+            
+    form {
+      padding: 0px 0px;
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 50px;
+      margin-left :300px;
+      margin-right: 300px;
+      background-color: skyblue;
+      opacity: 0.7;
+      border: black;
+      border-radius: 50px;
+      padding:20px;
+   }
+   
+button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+
+        </style>
+        <script>
+          function showDiv() {
+             document.getElementById('Div').style.display = "block";
+          }
+          </script>
+    </head>
+    <Body>
+  
+        
+        <form><center><h2><center>Enter the below attributes:-</center>
+        </h2><label for="wbc"><b>White blood cell count:</b></label><br>
+            <input type="number" id="wbc" name="wbc" ><br><br>
+            <label for="bu"><b>Blood Urea:</b></label><br>
+            <input type="number" id="bu" name="bu" ><br><br>
+            <label for="bgr"><b>Blood glucose random:</b></label><br>
+            <input type="number" id="bgr" name="bgr" ><br><br>
+            <label for="sc"><b>Serum creatine:</b></label><br>
+            <input type="number" id="sc" name="sc" ><br><br>
+            <label for="pcv"><b>Packed cell Volume:</b></label><br>
+            <input type="number" id="pcv" name="pvc" ><br><br>
+            <label for="a"><b>Albumin:</b></label><br>
+            <input type="number" id="a" name="a" ><br><br>
+            <label for="h"><b>Haemoglobin:</b></label><br>
+            <input type="number" id="h" name="h" ><br><br>
+            <label for="age"><b>Age:</b></label><br>
+            <input type="number" id="age" name="age" ><br><br>
+            <label for="sugar"><b>Sugar Level:</b></label><br>
+            <input type="number" id="sugar" name="sugar" ><br><br>
+            <label for="ht"><b>Hypertension:</b></label><br>
+            <input type="number" id="ht" name="ht" ><br><br>
+            <button type="submit" name="answer" value="Show Div" onclick="showDiv()" ><b>Predicit</b></button></form><br>
+            <div id="Div"  style="display:none;" class="answer_list" > 
+            <label for ="res" >Result</label>
+          <input type="text" id="res" name="res"></div>
+              
+
+      
+    </Body>
+</html>
+
